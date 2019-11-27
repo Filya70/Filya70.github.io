@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Russo+One|Tinos|Merriweather');
+
+
+html{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+	padding-right:0px !important;
+	width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+	margin: 0;
+	backgroud-color: #f2f2f2;
+	font-family: "Lato" sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color:#555;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-owerflow-scrolling: touch;
+
+
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family:"Russo One", sans-serif;
+	font-weight: 300;
+	color:#333;
+}
+
+P{
+	line-height: 28px;
+	margin-bottom: 25px;
+}
+
+.centered{
+	text-align: center;
+}
+
+a{
+	color:f85c37;
+}
+
+a:hover, a:focus{
+	color:#f7bb7b;
+	text-decoration: none;
+	outline: none;
+}
+.title-border{
+	padding-top: 40px;
+	text-align: center;
+}
+.title-border::after{
+	content:"";
+	display: block;
+	margin: 10px auto 0;
+	width: 90px;
+	height: 7px;
+	background-color: #FFD200;
+}
+
+hr{
+	display: block;
+	height: 1px;
+	border:0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*============    TOP   ===========*/
+.container{
+	cursor: default;
+	margin-top: 15px;
+	text-align: center;
+	width: 100%;
+	.logo{
+		float: left;
+		margin-top: 15px;
+	}
+	.content1{
+		h2{
+			text-align: left;
+			font-size: 18px;
+			float: right;
+			line-height: 1.5;
+		}
+		margin-top: 15px;
+	}
+	.time-work{
+		p{
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		h5{
+			margin-bottom: 0px;
+		}
+		.time{
+			margin-bottom: 0px;
+			font-size: 17px;
+		}
+	}
+	.phone-number{
+		margin-top: 15px;
+		float: right;
+	}
+}
+
+/*============    НАВИГАЦИЯ    ===========*/
+nav{
+	width: 100%;
+	z-index: 100;
+
+	background-color: #2010AF;
+	ul.list-inline a{
+		font-family: 'OpenSans', sans-serif;
+		font-size: 15px;
+		color:#fff;
+		text-decoration: none;
+		display: inline-block;
+		text-transform: uppercase;
+		padding-right: 15px;
+		padding-bottom: 14px;
+		padding-left: 15px;
+		padding-top: 17px;
+		&:hover{
+			text-decoration: none;
+			background-color: #201398;
+		}	
+	}
+	ul.list-inline{
+		margin-bottom: 0px;
+	}
+	.nav_bth1{
+		margin-left: 350px;
+		float: right;
+		font-family: 'OpenSans', sans-serif;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 16px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 17px;
+		padding-bottom: 13px;
+		background-color: #FFD517;
+		text-align: right;
+		color: #211C1C;
+		margin-bottom: 0px;
+		&:hover{
+			background-color: #FFF017;
+		}
+	}
+
+}
+
+
+/*============    Menu   ===========*/
+.navbar{
+	background: #0652a4;
+	font-weight: 800;
+	font-size:14px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	.navbar-brand-1{
+		padding-right: 18%;
+		display: inline-block;
+		padding-left: 7%;
+	}
+	.navbar-brand{
+		padding-right: 7%;
+		padding-left: 10%;
+	}
+	.navbar-nav{
+		font-size:20px;
+	}	
+}
+
+/*============ Картинка под меню       ===========*/
+.container{
+	width: 100% ;
+	height: auto;
+	.main-img{
+		position: relative;
+	}
+	.b-form{
+		border:1px solid #FFD200;
+		padding: 50px 50px 50px;
+		background: rgba(99,99,99,0.65);
+		position: absolute;
+		margin-left: 900px;
+		margin-top: 125px;
+	}
+}
+
+/*============ О компании       ===========*/
+
+.about{
+	overflow: hidden;
+	width: 100% \9;
+	height: auto;
+	align:center;
+	.caption{
+		padding-bottom: 40px;
+	}
+
+	.about_block{
+		padding-bottom: 30px;
+		background-color: #f2f2f2;
+		border-top:5px solid #FFD200;
+		border-bottom:5px solid #f2f2f2;
+		box-shadow: -1px 15px 23px -11px #a0a0a0;
+		text-align: center;
+		border-radius: 12px;
+		width: 250px;
+		height: 260px;
+		.block_title{
+			padding-top: 20px;
+			padding-bottom: 13px;
+			font-size:46px;
+			color:#0151a5;
+		}
+		.block_text{
+			padding-top: 15px;
+			font-size:15px;
+			font-family: 'Merriweather', serif;;
+		}
+	}
+}
+.about_block {
+	-moz-transition: all 0.6s ease-out;
+	-o-transition: all 0.6s ease-out;
+	-webkit-transition: all 0.6s ease-out;
+}
+
+.about_block:hover{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+
+
+/*============ Услуги    ===========*/
+
+.services{
+	padding-bottom: 50px;
+	margin-top: 35px;
+	width: 100%;
+	background: #f2f2f2;
+	.container{
+		width: 100%;
+	}
+	.content{
+		overflow: hidden;
+		padding-left: 15px;
+		padding-right: 20px;
+		.title-border{
+			padding-bottom: 25px;
+		}
+		.item-icon{
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+	}
+}
+
+
+/*============ Связь    ===========*/
+.zaliv{
+	background-size: cover;
+	background: rgba(37, 25, 207,0.65);
+	z-index: 4;
+}
+
+.walp{
+	background: rgba(37, 25, 207,0.65);
+	width: 100% \9;
+	height: auto;
+}
+
+
+/*============ Цены    ===========*/
+
+section#price{
+	
+	.title-border{
+		margin-bottom: 27px;
+	}
+
+	height: auto;
+	text-align: center;
+	.col-md-offset-1{
+		
+		font-size: 17px;
+		padding-left: 15px;
+
+		box-sizing: border-box;
+		.odd_1{
+			text-align: left;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			padding-left: 20px;
+			background-color: #f5f5f5;
+		}
+		.row{
+			text-align: left;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			padding-left: 20px;
+		}
+	}
+	.c-head{
+		text-transform: uppercase;
+		font-size:30px;
+		text-align: center;
+		margin-bottom: 35px;
+		font-weight:bold;
+	}
+	.tab{
+		width: 100%;
+	}
+	table{
+		text-align: center;
+		width: 100%;
+		border:1px solid #979797;
+		th{
+			font-size:18px;
+			text-align: center;
+		}
+	}
+}
+
+
+/*============ Как сделать заказ   ===========*/
+
+.order-main{
+	margin-top: 150px;
+	width: auto;
+	height: auto;
+	margin-top: 40px;
+	.order-info{
+		margin-top: 35px;
+	}
+	.order{
+		margin-top: 15px;
+		font-size: 18px;
+	}
+	.btn{
+		margin-top: 17px;
+	}
+}
+
+
+/*============ Отзывы   ===========*/
+.reviews{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	margin-top: 10px;
+	.review__block-wrapper{
+		margin-top: 50px;
+		.review__block-avatar{
+			margin-right: 15px;
+			float: left;
+			height: 100%;
+			width: auto;
+		}
+		.review__block-name{
+			display: block;
+			padding-top: 10px;
+
+		}
+		.review__block-text{
+			display: block;
+			text-align: left;	
+			margin-top: 10px;
+		}
+	}
+	.btn1{
+		margin-top: 50px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+
+/*============ Форма обратной связи   ===========*/
+
+section#main1{
+	margin-top: -15px;
+	height: auto;
+	text-align: center;
+	background: url(../img/main_bg_19201.jpg) no-repeat center center ;
+	background-size: cover;
+	.diss{
+		text-align: center;
+		.h222{
+			padding-top: 50px;
+			text-decoration: none;
+			cursor: default;
+			text-transform: uppercase;
+			color: #fff;
+		}
+		h5{
+			text-decoration: none;
+			cursor: default;
+			text-transform: uppercase;
+			color: #fff;
+			margin-bottom: 30px;
+		}
+		.place1{
+			text-align: center;
+			marigin-left: 20px;
+			input{
+				border: 3px solid #2010AF; //цвет рамки
+				border-radius: 10px; //закругление углов (общее)
+				-webkit-border-radius: 5px; //закругление углов (Google Chrome)
+				-moz-border-radius: 5px; //закругление углов (FireFox)
+				-khtml-border-radius: 5px; //закругление углов (Safari)
+				background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+				outline: none; // удаляет обводку в браузерах хром(желтая) и сафари(синяя)
+				padding: 20px;
+				color: #cccccc; //цвет шрифта в обычном состоянии
+				font-size: 15px; // Размер шрифта
+				font-style: strong;
+				&:focus{
+					outline: none;
+					color: #000;
+					}}
+				}
+				.place2{
+					text-align: center;
+					marigin-right: 20px;
+					input{
+						border: 3px solid #2010AF; //цвет рамки
+						border-radius: 10px; //закругление углов (общее)
+						-webkit-border-radius: 5px; //закругление углов (Google Chrome)
+						-moz-border-radius: 5px; //закругление углов (FireFox)
+						-khtml-border-radius: 5px; //закругление углов (Safari)
+						background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+						outline: none; // удаляет обводку в браузерах хром(желтая) и сафари(синяя)
+						padding: 20px;
+						color: #cccccc; //цвет шрифта в обычном состоянии
+						font-size: 15px; // Размер шрифта
+						&:focus{
+							outline: none;
+							color: #000;
+							}}
+						}
+					}
+					button{
+						border: none;
+						background-color: #2010AF;
+						padding: 15px 35px;
+						font-size: 22px;
+						color: #fff;
+						border-radius: 10px;
+						margin-bottom: 50px;
+						margin-top: 20px;
+						&:hover{
+							background-color: #261999;
+						}
+					}
+				}
+
+
+				/*============ Контакты   ===========*/
+			.contacts{
+				margin-top: 50px;
+				overflow: hidden;
+				width: 100%;
+				height: auto;
+				.cont-info{
+					background: url(../img/contacts.jpg) no-repeat center center ;
+					background-size: cover;
+					height: auto;
+					width: 100%;
+					text-align: center;
+					.title-border1{
+						padding-top: 40px;
+						text-align: center;
+						h2{
+							color:#fff;
+						}
+					}
+					.title-border1::after{
+						content:"";
+						display: block;
+						margin: 10px auto 0;
+						width: 90px;
+						height: 7px;
+						background-color: #FFD200;
+						margin-bottom: 28px;
+					}
+					.information{
+						margin-top: 15px;
+						text-decoration: none;
+						text-align: center;
+						font-size: 20px;
+						color:#fff;
+						padding-bottom: 30px;
+					}
+				}
+			}
+
+
+
+
+
+				/*============ Media    ===========*/
+
+				@media screen and (max-width: 479px) {
+					#stick_menu{
+						display: none;
+					}
+					.top-info{
+						display: none;
+					}
+					.navbar{
+						.navbar-brand{
+							padding-right: 1%;
+							padding-left: 1%;
+						}
+					}
+				}
+
+				@media screen and (min-width: 1200px) {
+					.navbar{
+						display: none;
+					}
+				}

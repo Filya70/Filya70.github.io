@@ -1,0 +1,564 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato|Russo+One|Tinos|Merriweather");
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  padding-right: 0px !important;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  backgroud-color: #f2f2f2;
+  font-family: "Lato" sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -webkit-owerflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Russo One", sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+
+P {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.centered {
+  text-align: center;
+}
+
+a {
+  color: f85c37;
+}
+
+a:hover, a:focus {
+  color: #f7bb7b;
+  text-decoration: none;
+  outline: none;
+}
+
+.title-border {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.title-border::after {
+  content: "";
+  display: block;
+  margin: 10px auto 0;
+  width: 90px;
+  height: 7px;
+  background-color: #FFD200;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*============    TOP   ===========*/
+.container {
+  cursor: default;
+  margin-top: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.container .logo {
+  float: left;
+  margin-top: 15px;
+}
+
+.container .content1 {
+  margin-top: 15px;
+}
+
+.container .content1 h2 {
+  text-align: left;
+  font-size: 18px;
+  float: right;
+  line-height: 1.5;
+}
+
+.container .time-work p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.container .time-work h5 {
+  margin-bottom: 0px;
+}
+
+.container .time-work .time {
+  margin-bottom: 0px;
+  font-size: 17px;
+}
+
+.container .phone-number {
+  margin-top: 15px;
+  float: right;
+}
+
+/*============    НАВИГАЦИЯ    ===========*/
+nav {
+  width: 100%;
+  z-index: 100;
+  background-color: #2010AF;
+}
+
+nav ul.list-inline a {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  padding-right: 15px;
+  padding-bottom: 14px;
+  padding-left: 15px;
+  padding-top: 17px;
+}
+
+nav ul.list-inline a:hover {
+  text-decoration: none;
+  background-color: #201398;
+}
+
+nav ul.list-inline {
+  margin-bottom: 0px;
+}
+
+nav .nav_bth1 {
+  margin-left: 350px;
+  float: right;
+  font-family: 'OpenSans', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 17px;
+  padding-bottom: 13px;
+  background-color: #FFD517;
+  text-align: right;
+  color: #211C1C;
+  margin-bottom: 0px;
+}
+
+nav .nav_bth1:hover {
+  background-color: #FFF017;
+}
+
+/*============    Menu   ===========*/
+.navbar {
+  background: #0652a4;
+  font-weight: 800;
+  font-size: 14px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.navbar .navbar-brand-1 {
+  padding-right: 18%;
+  display: inline-block;
+  padding-left: 7%;
+}
+
+.navbar .navbar-brand {
+  padding-right: 7%;
+  padding-left: 10%;
+}
+
+.navbar .navbar-nav {
+  font-size: 20px;
+}
+
+/*============ Картинка под меню       ===========*/
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.container .main-img {
+  position: relative;
+}
+
+.container .b-form {
+  border: 1px solid #FFD200;
+  padding: 50px 50px 50px;
+  background: rgba(99, 99, 99, 0.65);
+  position: absolute;
+  margin-left: 900px;
+  margin-top: 125px;
+}
+
+/*============ О компании       ===========*/
+.about {
+  overflow: hidden;
+  width: 100% \9;
+  height: auto;
+  align: center;
+}
+
+.about .caption {
+  padding-bottom: 40px;
+}
+
+.about .about_block {
+  padding-bottom: 30px;
+  background-color: #f2f2f2;
+  border-top: 5px solid #FFD200;
+  border-bottom: 5px solid #f2f2f2;
+  -webkit-box-shadow: -1px 15px 23px -11px #a0a0a0;
+          box-shadow: -1px 15px 23px -11px #a0a0a0;
+  text-align: center;
+  border-radius: 12px;
+  width: 250px;
+  height: 260px;
+}
+
+.about .about_block .block_title {
+  padding-top: 20px;
+  padding-bottom: 13px;
+  font-size: 46px;
+  color: #0151a5;
+}
+
+.about .about_block .block_text {
+  padding-top: 15px;
+  font-size: 15px;
+  font-family: 'Merriweather', serif;
+}
+
+.about_block {
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -webkit-transition: all 0.6s ease-out;
+}
+
+.about_block:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/*============ Услуги    ===========*/
+.services {
+  padding-bottom: 50px;
+  margin-top: 35px;
+  width: 100%;
+  background: #f2f2f2;
+}
+
+.services .container {
+  width: 100%;
+}
+
+.services .content {
+  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+.services .content .title-border {
+  padding-bottom: 25px;
+}
+
+.services .content .item-icon {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*============ Связь    ===========*/
+.zaliv {
+  background-size: cover;
+  background: rgba(37, 25, 207, 0.65);
+  z-index: 4;
+}
+
+.walp {
+  background: rgba(37, 25, 207, 0.65);
+  width: 100% \9;
+  height: auto;
+}
+
+/*============ Цены    ===========*/
+section#price {
+  height: auto;
+  text-align: center;
+}
+
+section#price .title-border {
+  margin-bottom: 27px;
+}
+
+section#price .col-md-offset-1 {
+  font-size: 17px;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section#price .col-md-offset-1 .odd_1 {
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  background-color: #f5f5f5;
+}
+
+section#price .col-md-offset-1 .row {
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+section#price .c-head {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+
+section#price .tab {
+  width: 100%;
+}
+
+section#price table {
+  text-align: center;
+  width: 100%;
+  border: 1px solid #979797;
+}
+
+section#price table th {
+  font-size: 18px;
+  text-align: center;
+}
+
+/*============ Как сделать заказ   ===========*/
+.order-main {
+  margin-top: 150px;
+  width: auto;
+  height: auto;
+  margin-top: 40px;
+}
+
+.order-main .order-info {
+  margin-top: 35px;
+}
+
+.order-main .order {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.order-main .btn {
+  margin-top: 17px;
+}
+
+/*============ Отзывы   ===========*/
+.reviews {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.reviews .review__block-wrapper {
+  margin-top: 50px;
+}
+
+.reviews .review__block-wrapper .review__block-avatar {
+  margin-right: 15px;
+  float: left;
+  height: 100%;
+  width: auto;
+}
+
+.reviews .review__block-wrapper .review__block-name {
+  display: block;
+  padding-top: 10px;
+}
+
+.reviews .review__block-wrapper .review__block-text {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.reviews .btn1 {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+/*============ Форма обратной связи   ===========*/
+section#main1 {
+  margin-top: -15px;
+  height: auto;
+  text-align: center;
+  background: url(../img/main_bg_19201.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+section#main1 .diss {
+  text-align: center;
+}
+
+section#main1 .diss .h222 {
+  padding-top: 50px;
+  text-decoration: none;
+  cursor: default;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+section#main1 .diss h5 {
+  text-decoration: none;
+  cursor: default;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+section#main1 .diss .place1 {
+  text-align: center;
+  marigin-left: 20px;
+}
+
+section#main1 .diss .place1 input {
+  border: 3px solid #2010AF;
+  border-radius: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  background: #ffffff !important;
+  outline: none;
+  padding: 20px;
+  color: #cccccc;
+  font-size: 15px;
+  font-style: strong;
+}
+
+section#main1 .diss .place1 input:focus {
+  outline: none;
+  color: #000;
+}
+
+section#main1 .diss .place2 {
+  text-align: center;
+  marigin-right: 20px;
+}
+
+section#main1 .diss .place2 input {
+  border: 3px solid #2010AF;
+  border-radius: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  background: #ffffff !important;
+  outline: none;
+  padding: 20px;
+  color: #cccccc;
+  font-size: 15px;
+}
+
+section#main1 .diss .place2 input:focus {
+  outline: none;
+  color: #000;
+}
+
+section#main1 button {
+  border: none;
+  background-color: #2010AF;
+  padding: 15px 35px;
+  font-size: 22px;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+section#main1 button:hover {
+  background-color: #261999;
+}
+
+/*============ Контакты   ===========*/
+.contacts {
+  margin-top: 50px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.contacts .cont-info {
+  background: url(../img/contacts.jpg) no-repeat center center;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.contacts .cont-info .title-border1 {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.contacts .cont-info .title-border1 h2 {
+  color: #fff;
+}
+
+.contacts .cont-info .title-border1::after {
+  content: "";
+  display: block;
+  margin: 10px auto 0;
+  width: 90px;
+  height: 7px;
+  background-color: #FFD200;
+  margin-bottom: 28px;
+}
+
+.contacts .cont-info .information {
+  margin-top: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+/*============ Media    ===========*/
+@media screen and (max-width: 479px) {
+  #stick_menu {
+    display: none;
+  }
+  .top-info {
+    display: none;
+  }
+  .navbar .navbar-brand {
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

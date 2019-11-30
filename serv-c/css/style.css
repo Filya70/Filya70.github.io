@@ -309,4 +309,81 @@ main .price .price__button button {
   padding: 13px 79px;
   cursor: pointer;
 }
+
+main .reviews {
+  letter-spacing: 0.05em;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.55)), to(rgba(0, 0, 0, 0.55))), url("../img/Rectangle 5@1x.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../img/Rectangle 5@1x.jpg");
+  text-align: center;
+  padding-top: 69px;
+  color: white;
+}
+
+main .reviews__title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+main .reviews .slider {
+  width: 78%;
+  margin: auto;
+  position: relative;
+  margin-top: 15px;
+}
+
+main .reviews .slider .slides__review {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+}
+
+main .reviews .slider .slides__review_auth {
+  text-align: right;
+  margin-top: 23px;
+  margin-right: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main .reviews .slider ul {
+  margin: 0 0 49px;
+}
+
+main .reviews .slider ul li {
+  display: inline;
+  margin-right: 11px;
+  font-size: 16px;
+}
+
+main .reviews .slider .slick-active {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+main .reviews .slider:before {
+  content: "";
+  background: url(../img/apostr.png);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 23px;
+  height: 21px;
+  position: absolute;
+  left: -15px;
+  top: -10px;
+}
+
+main .reviews .slider::after {
+  content: "";
+  background: url(../img/apostr.png);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 23px;
+  height: 21px;
+  position: absolute;
+  right: -15px;
+  bottom: -10px;
+}
 /*# sourceMappingURL=style.css.map */

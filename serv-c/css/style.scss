@@ -270,4 +270,70 @@ main{
             }
         }
     }
+    .reviews{
+        letter-spacing: 0.05em;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../img/Rectangle\ 5@1x.jpg'); 
+        text-align: center;
+        padding-top: 69px;
+        color: white;
+        &__title{
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 26px;
+            text-transform: uppercase;
+            
+        }
+        .slider{
+            width: 78%;
+            margin: auto;
+            position: relative;
+            margin-top: 15px;
+            .slides__review{
+                font-size: 18px;
+                line-height: 25px;
+                letter-spacing: 0.05em;
+                font-weight: normal;
+            }
+            .slides__review_auth{
+                text-align: right;
+                margin-top: 23px;
+                margin-right: 5px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            ul{
+                margin: 0 0 49px;
+                
+                li{
+                    display: inline;
+                    margin-right: 11px;
+                    font-size: 16px;
+                }
+            }
+            .slick-active{
+                font-weight: bold;
+                font-size: 36px;
+            }
+        }
+        .slider:before{
+            content: "";
+            background: url(../img/apostr.png);
+            box-sizing: border-box;
+            width: 23px;
+            height: 21px;
+            position: absolute;
+            left: -15px;
+            top: -10px;
+        }
+        .slider::after{
+            content: "";
+            background: url(../img/apostr.png);
+            box-sizing: border-box;
+            width: 23px;
+            height: 21px;
+            position: absolute;
+            right: -15px;
+            bottom: -10px;
+        }
+    }
 }

@@ -25,4 +25,10 @@ $('.question__item__title').on('click',function(){
   $(this).toggleClass('open');
 });
 
+$('.mobile__menu').on('click',function(){
+  $(this).parents('nav').find('.mobile__items').slideToggle(600);
+  $(this).parents('header').find('nav').toggleClass('open');
+  // $(.mobile__menu__items).toggleClass('open');
+});
+
 });

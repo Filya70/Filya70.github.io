@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+$green: #4ab45b;
+$red: #b12323;
+$O-S: "Open Sans", sans-serif;
+$Roboto: "Roboto", sans-serif;
+
+.wrapper {
+    width: 96%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    margin: 80px 0px 57px;
+    font-family: $O-S;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 65px;
+    position: relative;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 4.5em;
+    background: $green;
+}
+
+.nav {
+    background-color: #ffffff;
+    font-family: $O-S;
+    padding: 15px 0px;
+    border-bottom: 1px solid #e4e4e5;
+    .wrapper__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav__items {
+            display: flex;
+            .nav__item {
+                margin-right: 53px;
+                a {
+                    color: black;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+            .nav__item:nth-child(1) {
+                margin-left: 15px;
+            }
+            .nav__item:nth-last-child(1) {
+                margin-right: 15px;
+            }
+        }
+        .nav__social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .social__icon {
+                margin-right: 22px;
+                width: 28px;
+                height: 28px;
+            }
+            .social__icon:nth-last-child(1) {
+                margin-right: 30px;
+                width: 50px;
+                height: 28px;
+            }
+            .social__icon:hover {
+                path,
+                clipPath {
+                    fill: #000;
+                }
+                circle {
+                    stroke: #000;
+                }
+            }
+        }
+    }
+}
+
+.wrapper_header-content {
+    display: flex;
+    align-items: center;
+    font-family: $O-S;
+    margin-top: 20px;
+    .header__content_img {
+    }
+    .header__content_form {
+        max-width: 340px;
+        margin: auto;
+        .form__title {
+            font-weight: 800;
+            font-size: 27px;
+            line-height: 37px;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        .form__subtitle {
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            input {
+                margin-bottom: 33px;
+                padding: 12px;
+                border: 1px solid #000000;
+                box-sizing: border-box;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+            button {
+                background: #b12323;
+                border-radius: 15px;
+                border: none;
+                padding: 15px;
+                font-family: $O-S;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 21px;
+                color: #ffffff;
+            }
+            button:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+main {
+    .slider__reviews {
+        display: flex;
+        .review {
+            margin: 0px 20px;
+            display: flex;
+            align-items: center;
+            &__info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .review__name {
+                    font-family: $Roboto;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin-top: 15px;
+                }
+            }
+            &__text {
+                margin-left: 25px;
+                font-family: $O-S;
+                font-size: 14px;
+            }
+        }
+    }
+}
